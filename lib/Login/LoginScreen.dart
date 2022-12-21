@@ -1,7 +1,4 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
-
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -55,7 +52,13 @@ class LoginPageState extends State<LoginPage> {
               ],
             ),
             ElevatedButton(
-              onPressed: () {  },
+              style: OutlinedButton.styleFrom(
+              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
+              side: const BorderSide(color: Colors.red), // foreground border
+              backgroundColor: Colors.red
+            ),
+              onPressed: () { 
+              },
               child: const Text('Đăng nhập', style: TextStyle(fontSize: 28)
             ))
           ],
